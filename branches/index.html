@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Store Branches – Murlidhar Store</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/ms-favicon-s.png" />
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+
+<body class="branches-page">
+    <!-- ========================================================
+        MAIN NAVIGATION
+    ======================================================== -->
+    <nav class="main-nav" aria-label="Main navigation">
+        <div class="main-nav__pill">
+            <div class="main-nav__inner">
+                <!-- Logo -->
+                <a class="main-nav__brand logo-fade-up" href="../home/index.html">
+                    <img src="../assets/img/ms-logo-h-cbg.png" alt="Murlidhar Store" class="main-nav__logo" />
+                </a>
+                <!-- Hamburger toggle (mobile) -->
+                <button class="main-nav__toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavMenu"
+                    aria-controls="mainNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+                <!-- Nav Links + Button -->
+                <div class="collapse navbar-collapse main-nav__collapse" id="mainNavMenu">
+                    <ul class="navbar-nav main-nav__menu">
+                        <li class="nav-item">
+                            <a class="nav-link main-nav__link" href="../home/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-nav__link" href="../about-us/index.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-nav__link" href="../brands-&-products/index.html">Brands &amp;
+                                Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main-nav__link active" aria-current="page" href="index.html">Branches</a>
+                        </li>
+                    </ul>
+                    <button class="ms-contact-btn" type="button" onclick="window.location.href='#contact-us'">
+                        <i class="bi bi-telephone-fill ms-contact-btn__icon" aria-hidden="true"></i>
+                        <span class="ms-contact-btn__text-wrap">
+                            <span class="ms-contact-btn__text-default">Contact Us</span>
+                            <span class="ms-contact-btn__text-hover">Call Now</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========================================================
+             BRANCHES HERO WITH AHMEDABAD STORE-AREA MAP
+        ======================================================== -->
+        <section class="page-hero page-hero--branches">
+            <div class="container page-hero__container">
+                <div class="branches-hero-layout">
+                    <div class="branches-hero__content">
+                        <span class="branches-hero__eyebrow"><i class="bi bi-geo-alt-fill"></i> Ahmedabad, Gujarat</span>
+                        <h1 class="page-hero__title anim-fade-up">
+                            Find Your Nearest<br><span class="page-hero__title-highlight">Murlidhar Store</span>
+                        </h1>
+                        <p class="branches-hero__subtitle">
+                            Eight Murlidhar stores, serving neighborhoods across Ahmedabad.
+                        </p>
+                        <nav aria-label="breadcrumb" class="page-hero__breadcrumb-nav anim-fade-up">
+                            <ol class="page-hero__breadcrumb">
+                                <li class="page-hero__breadcrumb-item">
+                                    <a href="../home/index.html"><i class="bi bi-house-door-fill"></i> Home</a>
+                                </li>
+                                <li class="page-hero__breadcrumb-separator">
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                                <li class="page-hero__breadcrumb-item active" aria-current="page">
+                                    Branches
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <figure class="branches-map" aria-labelledby="branches-map-caption">
+                        <div class="branches-map__canvas">
+                            <svg class="branches-map__art" viewBox="0 0 720 430" role="img"
+                                aria-label="Illustrative street map of Ahmedabad with the Sabarmati River and Murlidhar store-area markers">
+                                <defs>
+                                    <pattern id="branches-map-blocks" width="56" height="48" patternUnits="userSpaceOnUse"
+                                        patternTransform="rotate(-12)">
+                                        <path d="M4 4h40v30H4z" fill="#fff" fill-opacity=".7"
+                                            stroke="#bfd3e2" stroke-width="2" />
+                                    </pattern>
+                                </defs>
+                                <rect width="720" height="430" rx="22" fill="#eaf4f8" />
+                                <path d="M0 0h720v430H0z" fill="url(#branches-map-blocks)" opacity=".88" />
+                                <path d="M201 -24c-28 75 36 106 11 168s-53 96-20 147 35 83 7 163"
+                                    fill="none" stroke="#b7e3ec" stroke-width="43" />
+                                <path d="M201 -24c-28 75 36 106 11 168s-53 96-20 147 35 83 7 163"
+                                    fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="8 10" />
+                                <path d="M-18 120 743 306M20 360 684 72M93 -10l396 456M-20 248 740 170"
+                                    fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" />
+                                <path d="M-18 120 743 306M20 360 684 72M93 -10l396 456M-20 248 740 170"
+                                    fill="none" stroke="#c7d8e4" stroke-width="2" stroke-linecap="round" />
+                                <circle cx="205" cy="196" r="9" fill="#8bc9d6" />
+                                <text x="42" y="40" fill="#42647a" font-size="13" font-weight="700"
+                                    letter-spacing="2">AHMEDABAD</text>
+                                <text x="224" y="218" fill="#5f94a2" font-size="12" font-weight="600"
+                                    transform="rotate(-75 224 218)">SABARMATI RIVER</text>
+                                <text x="595" y="395" fill="#7690a2" font-size="10" font-weight="600"
+                                    letter-spacing="1.5">ILLUSTRATIVE MAP</text>
+                            </svg>
+                            <span class="branches-map__north" aria-hidden="true"><i class="bi bi-compass-fill"></i> N</span>
+
+                            <a class="branches-map__marker branches-map__marker--label-left" href="#our-branches"
+                                data-branch-index="7" style="--pin-x: 34%; --pin-y: 27%;"
+                                aria-label="Gurukul area: view Murlidhar branch">
+                                <span class="branches-map__pin"><i class="bi bi-shop-window-fill"></i></span>
+                                <span class="branches-map__label">Gurukul</span>
+                            </a>
+                            <a class="branches-map__marker branches-map__marker--label-left" href="#our-branches"
+                                data-branch-index="6" style="--pin-x: 77%; --pin-y: 39%;"
+                                aria-label="Bapunagar area: view Murlidhar branch">
+                                <span class="branches-map__pin"><i class="bi bi-shop-window-fill"></i></span>
+                                <span class="branches-map__label">Bapunagar</span>
+                            </a>
+                            <a class="branches-map__marker" href="#our-branches" data-branch-index="0"
+                                style="--pin-x: 48%; --pin-y: 57%;"
+                                aria-label="Bhulabhai area: view Murlidhar branch">
+                                <span class="branches-map__pin"><i class="bi bi-shop-window-fill"></i></span>
+                                <span class="branches-map__label">Bhulabhai</span>
+                            </a>
+                            <a class="branches-map__marker branches-map__marker--label-left" href="#our-branches"
+                                data-branch-index="1" style="--pin-x: 66%; --pin-y: 66%;"
+                                aria-label="Maninagar - 2: view branch details">
+                                <span class="branches-map__pin"><i class="bi bi-shop-window-fill"></i></span>
+                                <span class="branches-map__label">Maninagar <b>2 stores</b></span>
+                            </a>
+                            <a class="branches-map__marker branches-map__marker--icon-only" href="#our-branches"
+                                data-branch-index="2" style="--pin-x: 73%; --pin-y: 72%;"
+                                aria-label="Maninagar - 1: view branch details">
+                                <span class="branches-map__pin"><i class="bi bi-shop-window-fill"></i></span>
+                                <span class="branches-map__label">Maninagar - 1</span>
+                            </a>
+                            <a class="branches-map__marker branches-map__marker--label-left" href="#our-branches"
+                                data-branch-index="3" style="--pin-x: 79%; --pin-y: 82%;"
+                                aria-label="Isanpur - 3: view branch details">
+                                <span class="branches-map__pin"><i class="bi bi-shop-window-fill"></i></span>
+                                <span class="branches-map__label">Isanpur <b>3 stores</b></span>
+                            </a>
+                            <a class="branches-map__marker branches-map__marker--icon-only" href="#our-branches"
+                                data-branch-index="4" style="--pin-x: 71%; --pin-y: 89%;"
+                                aria-label="Isanpur - 2: view branch details">
+                                <span class="branches-map__pin"><i class="bi bi-shop-window-fill"></i></span>
+                                <span class="branches-map__label">Isanpur - 2</span>
+                            </a>
+                            <a class="branches-map__marker branches-map__marker--icon-only" href="#our-branches"
+                                data-branch-index="5" style="--pin-x: 87%; --pin-y: 90%;"
+                                aria-label="Isanpur - 1: view branch details">
+                                <span class="branches-map__pin"><i class="bi bi-shop-window-fill"></i></span>
+                                <span class="branches-map__label">Isanpur - 1</span>
+                            </a>
+                        </div>
+                        <figcaption class="branches-map__caption" id="branches-map-caption">
+                            <span><i class="bi bi-info-circle"></i> Pins show store areas, not exact street locations.</span>
+                            <span class="branches-map__count"><i class="bi bi-shop"></i> 8 Ahmedabad stores</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kohinoor-style Trust & Store Advantage Bar -->
+        <section class="ms-trust-bar" aria-label="Murlidhar Store Advantages">
+            <div class="container">
+                <div class="ms-trust-bar__grid">
+                    <div class="ms-trust-bar__item">
+                        <div class="ms-trust-bar__icon-wrap"><i class="bi bi-tag-fill"></i></div>
+                        <div class="ms-trust-bar__content">
+                            <h4 class="ms-trust-bar__title">Best Price In Store</h4>
+                            <p class="ms-trust-bar__sub">Available across all 8+ branches</p>
+                        </div>
+                    </div>
+                    <div class="ms-trust-bar__item">
+                        <div class="ms-trust-bar__icon-wrap"><i class="bi bi-percent"></i></div>
+                        <div class="ms-trust-bar__content">
+                            <h4 class="ms-trust-bar__title">0% No Cost EMI</h4>
+                            <p class="ms-trust-bar__sub">Instant on-spot store approval</p>
+                        </div>
+                    </div>
+                    <div class="ms-trust-bar__item">
+                        <div class="ms-trust-bar__icon-wrap"><i class="bi bi-patch-check-fill"></i></div>
+                        <div class="ms-trust-bar__content">
+                            <h4 class="ms-trust-bar__title">100% Genuine Brands</h4>
+                            <p class="ms-trust-bar__sub">Authorized dealer warranty</p>
+                        </div>
+                    </div>
+                    <div class="ms-trust-bar__item">
+                        <div class="ms-trust-bar__icon-wrap"><i class="bi bi-truck"></i></div>
+                        <div class="ms-trust-bar__content">
+                            <h4 class="ms-trust-bar__title">Live Demos &amp; Pickup</h4>
+                            <p class="ms-trust-bar__sub">Try before you buy in person</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             BRANCHES LIST SHOWCASE SECTION
+        ======================================================== -->
+        <section class="branches-section" id="our-branches">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="branches-header anim-fade-up">
+                    <span class="branches-header__badge">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Find a Store Near You
+                    </span>
+                    <h2 class="branches-header__title">
+                        Discover a Murlidhar Store Near You
+                        <img src="../assets/img/bang-element.png" alt="" class="branches-header__title-decor" />
+                    </h2>
+                    <p class="branches-header__subtitle">
+                        Visit your nearest Murlidhar Store to explore the latest smartphones, home appliances, and
+                        trusted brands with expert assistance.
+                    </p>
+                </div>
+
+                <!-- 3D Curved Carousel Container -->
+                
+<div class="portfolio-3d-carousel-container">
+    <div class="portfolio-3d-carousel-track">
+
+        <!-- Branch 1: Bhulabhai Park -->
+        <div class="portfolio-3d-card"
+             data-url="https://www.google.com/maps/search/?api=1&query=Shahwat+Complex+Bhulabhai+Park+Char+Rasta+Opp+Bank+of+Baroda+Gitamandir+Road+Ahmedabad">
+
+            <div class="portfolio-3d-card__glow"></div>
+            <div class="branch-card">
+                <div class="branch-card__img-wrap">
+                    <span class="branch-card__badge">Main Showroom</span>
+                    <img src="../assets/img/store1.png"
+                         alt="Bhulabhai Park Store"
+                         class="branch-card__img" loading="lazy">
+                </div>
+
+                <div class="branch-card__content">
+                    <h3 class="branch-card__title">Bhulabhai Park</h3>
+
+                    <div class="branch-card__details">
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Shahwat Complex, Bhulabhai Park Char Rasta, Opp Bank of Baroda, Gitamandir Road</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+91 97734 34988
+                            </span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <span>10:00 AM - 09:30 PM (All Days)</span>
+                        </div>
+                    </div>
+
+                    <div class="branch-card__actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Shahwat+Complex+Bhulabhai+Park+Char+Rasta+Opp+Bank+of+Baroda+Gitamandir+Road+Ahmedabad"
+                           target="_blank" rel="noopener"
+                           class="branch-card__btn branch-card__btn--secondary">
+                            <i class="bi bi-map-fill"></i> Map
+                        </a>
+                        <a href="tel:+91977343988"
+                           class="branch-card__btn branch-card__btn--primary">
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch 2: Maninagar -->
+        <div class="portfolio-3d-card"
+             data-url="https://www.google.com/maps/search/?api=1&query=G-3+Kesarkunj+Complex+Krushna+Baug+Cross+Road+Near+ING+Bank+Maninagar+Ahmedabad">
+
+            <div class="portfolio-3d-card__glow"></div>
+            <div class="branch-card">
+                <div class="branch-card__img-wrap">
+                    <span class="branch-card__badge">Experience Center</span>
+                    <img src="../assets/img/store2.png"
+                         alt="Maninagar Store"
+                         class="branch-card__img" loading="lazy">
+                </div>
+
+                <div class="branch-card__content">
+                    <h3 class="branch-card__title">Maninagar</h3>
+
+                    <div class="branch-card__details">
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>G-3, Kesarkunj Complex, Krushna Baug Cross Road, Near ING Bank, Maninagar</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+91 79900 61069</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <span>10:00 AM - 09:30 PM (All Days)</span>
+                        </div>
+                    </div>
+
+                    <div class="branch-card__actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=G-3+Kesarkunj+Complex+Krushna+Baug+Cross+Road+Near+ING+Bank+Maninagar+Ahmedabad"
+                           target="_blank" rel="noopener"
+                           class="branch-card__btn branch-card__btn--secondary">
+                            <i class="bi bi-map-fill"></i> Map
+                        </a>
+                        <a href="tel:+917990061069"
+                           class="branch-card__btn branch-card__btn--primary">
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch 3: Maninagar 2 -->
+        <div class="portfolio-3d-card"
+             data-url="https://www.google.com/maps/search/?api=1&query=Shop+No+4+Gopal+Complex+Krushnabaug+Char+Rasta+Amaninagar+Ahmedabad">
+
+            <div class="portfolio-3d-card__glow"></div>
+            <div class="branch-card">
+                <div class="branch-card__img-wrap">
+                    <span class="branch-card__badge">Smart Lounge</span>
+                    <img src="../assets/img/store3.png"
+                         alt="Maninagar 2 Store"
+                         class="branch-card__img" loading="lazy">
+                </div>
+
+                <div class="branch-card__content">
+                    <h3 class="branch-card__title">Maninagar - 2</h3>
+
+                    <div class="branch-card__details">
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Shop No. 4, Gopal Complex, Krushnabaug Char Rasta, Amaninagar</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+91 79900 61069</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <span>10:00 AM - 09:30 PM (All Days)</span>
+                        </div>
+                    </div>
+
+                    <div class="branch-card__actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Shop+No+4+Gopal+Complex+Krushnabaug+Char+Rasta+Amaninagar+Ahmedabad"
+                           target="_blank" rel="noopener"
+                           class="branch-card__btn branch-card__btn--secondary">
+                            <i class="bi bi-map-fill"></i> Map
+                        </a>
+                        <a href="tel:+917990061069"
+                           class="branch-card__btn branch-card__btn--primary">
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch 4: Isanpur -->
+        <div class="portfolio-3d-card"
+             data-url="https://www.google.com/maps/search/?api=1&query=U-G1%2F2+Sun+Complex+Opp+Lotus+School+Viratnagar+Bus+Stop+Govindvadi+Isanpur+Ahmedabad">
+
+            <div class="portfolio-3d-card__glow"></div>
+            <div class="branch-card">
+                <div class="branch-card__img-wrap">
+                    <span class="branch-card__badge">Mega Showroom</span>
+                    <img src="../assets/img/store4.png"
+                         alt="Isanpur Store"
+                         class="branch-card__img" loading="lazy">
+                </div>
+
+                <div class="branch-card__content">
+                    <h3 class="branch-card__title">Isanpur</h3>
+
+                    <div class="branch-card__details">
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>U-G1/2, Sun Complex, Opp Lotus School, Viratnagar Bus Stop, Near Govindvadi, Isanpur</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+91 98982 31888</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <span>10:00 AM - 09:30 PM (All Days)</span>
+                        </div>
+                    </div>
+
+                    <div class="branch-card__actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=U-G1%2F2+Sun+Complex+Opp+Lotus+School+Viratnagar+Bus+Stop+Govindvadi+Isanpur+Ahmedabad"
+                           target="_blank" rel="noopener"
+                           class="branch-card__btn branch-card__btn--secondary">
+                            <i class="bi bi-map-fill"></i> Map
+                        </a>
+                        <a href="tel:+919898231888"
+                           class="branch-card__btn branch-card__btn--primary">
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch 5: Isanpur 2 -->
+        <div class="portfolio-3d-card"
+             data-url="https://www.google.com/maps/search/?api=1&query=2-3+Shree+Radha+Krishna+Co-Op+Housing+Society+Opp+Isanpur+Post+Office+Isanpur+Ahmedabad">
+
+            <div class="portfolio-3d-card__glow"></div>
+            <div class="branch-card">
+                <div class="branch-card__img-wrap">
+                    <span class="branch-card__badge">Appliance Zone</span>
+                    <img src="../assets/img/store5.png"
+                         alt="Isanpur 2 Store"
+                         class="branch-card__img" loading="lazy">
+                </div>
+
+                <div class="branch-card__content">
+                    <h3 class="branch-card__title">Isanpur - 2</h3>
+
+                    <div class="branch-card__details">
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>2-3, Shree Radha Krishna Co-Op. Housing Society Ltd., Opp Isanpur Post Office, Isanpur</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+91 82005 18087</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <span>10:00 AM - 09:30 PM (All Days)</span>
+                        </div>
+                    </div>
+
+                    <div class="branch-card__actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=2-3+Shree+Radha+Krishna+Co-Op+Housing+Society+Opp+Isanpur+Post+Office+Isanpur+Ahmedabad"
+                           target="_blank" rel="noopener"
+                           class="branch-card__btn branch-card__btn--secondary">
+                            <i class="bi bi-map-fill"></i> Map
+                        </a>
+                        <a href="tel:+918200518087"
+                           class="branch-card__btn branch-card__btn--primary">
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch 6: Isanpur Vatva Road -->
+        <div class="portfolio-3d-card"
+             data-url="https://www.google.com/maps/search/?api=1&query=Dharambhumi+Shopping+Center+2-4+New+Vatva+Road+Jethabhai+Vav+Isanpur+Ahmedabad+382443">
+
+            <div class="portfolio-3d-card__glow"></div>
+            <div class="branch-card">
+                <div class="branch-card__img-wrap">
+                    <span class="branch-card__badge">Smart Showroom</span>
+                    <img src="../assets/img/store1.png"
+                         alt="Isanpur Vatva Road Store"
+                         class="branch-card__img" loading="lazy">
+                </div>
+
+                <div class="branch-card__content">
+                    <h3 class="branch-card__title">Isanpur - Vatva Road</h3>
+
+                    <div class="branch-card__details">
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Dharambhumi Shopping Center, 2-4 New Vatva Road, Jethabhai Vav, Isanpur, Ahmedabad - 382443</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+91 82005 21248</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <span>10:00 AM - 09:30 PM (All Days)</span>
+                        </div>
+                    </div>
+
+                    <div class="branch-card__actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Dharambhumi+Shopping+Center+2-4+New+Vatva+Road+Jethabhai+Vav+Isanpur+Ahmedabad+382443"
+                           target="_blank" rel="noopener"
+                           class="branch-card__btn branch-card__btn--secondary">
+                            <i class="bi bi-map-fill"></i> Map
+                        </a>
+                        <a href="tel:+918200521248"
+                           class="branch-card__btn branch-card__btn--primary">
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch 7: Bapunagar -->
+        <div class="portfolio-3d-card"
+             data-url="https://www.google.com/maps/search/?api=1&query=118%2F119+Prarthana+Complex+Opp+Dinesh+Chambers+Near+Kakadiya+Hospital+India+Colony+Bapunagar+Ahmedabad">
+
+            <div class="portfolio-3d-card__glow"></div>
+            <div class="branch-card">
+                <div class="branch-card__img-wrap">
+                    <span class="branch-card__badge">Premium Center</span>
+                    <img src="../assets/img/store2.png"
+                         alt="Bapunagar Store"
+                         class="branch-card__img" loading="lazy">
+                </div>
+
+                <div class="branch-card__content">
+                    <h3 class="branch-card__title">Bapunagar</h3>
+
+                    <div class="branch-card__details">
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>118/119, Prarthana Complex, Opp Dinesh Chambers, Near Kakadiya Hospital, India Colony, Bapunagar, Ahmedabad</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+91 98980 21919</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <span>10:00 AM - 09:30 PM (All Days)</span>
+                        </div>
+                    </div>
+
+                    <div class="branch-card__actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=118%2F119+Prarthana+Complex+Opp+Dinesh+Chambers+Near+Kakadiya+Hospital+India+Colony+Bapunagar+Ahmedabad"
+                           target="_blank" rel="noopener"
+                           class="branch-card__btn branch-card__btn--secondary">
+                            <i class="bi bi-map-fill"></i> Map
+                        </a>
+                        <a href="tel:+919898021919"
+                           class="branch-card__btn branch-card__btn--primary">
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Branch 8: Gurukul -->
+        <div class="portfolio-3d-card"
+             data-url="https://www.google.com/maps/search/?api=1&query=G%2F99+Heritej+Plaza+Gurukul+Road+Opp+Swaminarayan+Mandir+Memnagar+Ahmedabad+380052">
+
+            <div class="portfolio-3d-card__glow"></div>
+            <div class="branch-card">
+                <div class="branch-card__img-wrap">
+                    <span class="branch-card__badge">Digital Zone</span>
+                    <img src="../assets/img/store3.png"
+                         alt="Gurukul Store"
+                         class="branch-card__img" loading="lazy">
+                </div>
+
+                <div class="branch-card__content">
+                    <h3 class="branch-card__title">Gurukul</h3>
+
+                    <div class="branch-card__details">
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>G/99, Heritej Plaza, Gurukul Road, Opp Swaminarayan Mandir, Memnagar, Ahmedabad - 380052</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>+91 99981 29530</span>
+                        </div>
+                        <div class="branch-card__detail-item">
+                            <i class="bi bi-clock-fill"></i>
+                            <span>10:00 AM - 09:30 PM (All Days)</span>
+                        </div>
+                    </div>
+
+                    <div class="branch-card__actions">
+                        <a href="https://www.google.com/maps/search/?api=1&query=G%2F99+Heritej+Plaza+Gurukul+Road+Opp+Swaminarayan+Mandir+Memnagar+Ahmedabad+380052"
+                           target="_blank" rel="noopener"
+                           class="branch-card__btn branch-card__btn--secondary">
+                            <i class="bi bi-map-fill"></i> Map
+                        </a>
+                        <a href="tel:+919998129530"
+                           class="branch-card__btn branch-card__btn--primary">
+                            <i class="bi bi-telephone-fill"></i> Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+```
+
+                <!-- Carousel Controls -->
+                <div class="portfolio-3d-controls mt-5 animate-fade-in-up">
+                    <div class="d-flex align-items-center justify-content-center gap-4 w-100 px-3">
+                        <button class="portfolio-3d-nav-btn" id="prevBtn" aria-label="Previous Branch">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <div class="portfolio-3d-slider-wrapper flex-grow-1">
+                            <input type="range" class="portfolio-3d-slider" id="angleSlider" min="0" max="360"
+                                value="0">
+                        </div>
+                        <button class="portfolio-3d-nav-btn" id="nextBtn" aria-label="Next Branch">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                    <span class="text-secondary small opacity-75 mt-3 d-block text-center"
+                        style="font-family: var(--ms-font-body); font-size: 13px;">Drag the cards or use the
+                        slider/buttons to rotate</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             CONTACT & INQUIRY SECTION
+        ======================================================== -->
+        <section class="inquiry-section" id="contact-us">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <!-- Left: Contact Information -->
+                    <div class="col-lg-6 anim-fade-left">
+                        <div class="inquiry-section__info">
+                            <span class="inquiry-section__badge">
+                                <i class="bi bi-envelope-fill"></i> Get in Touch
+                            </span>
+                            <h2 class="inquiry-section__title">
+                                Have any Questions? <br>
+                                <span class="inquiry-section__title-highlight">We are here to help!</span>
+                            </h2>
+                            <p class="inquiry-section__desc">
+                                Whether you're looking for product availability, special discounts, or need technical
+                                guidance, feel free to drop us a message. Our retail experts will reach out to you
+                                shortly.
+                            </p>
+
+                            <!-- Info Cards -->
+                            <div class="inquiry-section__cards-list">
+                                <!-- Phone Call Card -->
+                                <a href="tel:+919999999999" class="inquiry-card">
+                                    <div class="inquiry-card__icon-wrap">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div class="inquiry-card__content">
+                                        <span class="inquiry-card__label">Call Customer Support</span>
+                                        <span class="inquiry-card__value">+91 97734 34988</span>
+                                    </div>
+                                    <div class="inquiry-card__arrow">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                </a>
+
+                                <!-- Email Card -->
+                                <a href="mailto:support@murlidharstore.com" class="inquiry-card">
+                                    <div class="inquiry-card__icon-wrap">
+                                        <i class="bi bi-envelope-at-fill"></i>
+                                    </div>
+                                    <div class="inquiry-card__content">
+                                        <span class="inquiry-card__label">Email Us Directly</span>
+                                        <span class="inquiry-card__value">support@murlidharstore.com</span>
+                                    </div>
+                                    <div class="inquiry-card__arrow">
+                                        <i class="bi bi-arrow-right"></i>
+                                    </div>
+                                </a>
+
+                                <!-- Availability Card -->
+                                <div class="inquiry-card inquiry-card--static">
+                                    <div class="inquiry-card__icon-wrap">
+                                        <i class="bi bi-clock-fill"></i>
+                                    </div>
+                                    <div class="inquiry-card__content">
+                                        <span class="inquiry-card__label">Showroom Business Hours</span>
+                                        <span class="inquiry-card__value">10:00 AM - 09:30 PM (All Days)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Modern Glassmorphic Form Card -->
+                    <div class="col-lg-6 anim-fade-up">
+                        <div class="inquiry-form-card">
+                            <div class="inquiry-form-card__header">
+                                <h3 class="inquiry-form-card__title">Send a Message</h3>
+                                <p class="inquiry-form-card__subtitle">Fill the form below and our team will call you
+                                    back.</p>
+                            </div>
+
+                            <form action="#" class="inquiry-form"
+                                onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you soon.'); this.reset();">
+                                <!-- Name Input -->
+                                <div class="inquiry-form__group">
+                                    <label for="contact-name" class="inquiry-form__label">Full Name</label>
+                                    <div class="inquiry-form__input-wrapper">
+                                        <i class="bi bi-person inquiry-form__icon"></i>
+                                        <input type="text" id="contact-name" class="inquiry-form__input"
+                                            placeholder="Enter your full name" required>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Number Input -->
+                                    <div class="col-md-6 inquiry-form__group">
+                                        <label for="contact-phone" class="inquiry-form__label">Phone Number</label>
+                                        <div class="inquiry-form__input-wrapper">
+                                            <i class="bi bi-telephone inquiry-form__icon"></i>
+                                            <input type="tel" id="contact-phone" class="inquiry-form__input"
+                                                placeholder="Your phone number" required>
+                                        </div>
+                                    </div>
+                                    <!-- Email Input -->
+                                    <div class="col-md-6 inquiry-form__group">
+                                        <label for="contact-email" class="inquiry-form__label">Email Address</label>
+                                        <div class="inquiry-form__input-wrapper">
+                                            <i class="bi bi-envelope inquiry-form__icon"></i>
+                                            <input type="email" id="contact-email" class="inquiry-form__input"
+                                                placeholder="Your email address" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Message Input -->
+                                <div class="inquiry-form__group">
+                                    <label for="contact-message" class="inquiry-form__label">Message</label>
+                                    <div class="inquiry-form__input-wrapper">
+                                        <i
+                                            class="bi bi-chat-left-text inquiry-form__icon inquiry-form__icon--textarea"></i>
+                                        <textarea id="contact-message"
+                                            class="inquiry-form__input inquiry-form__input--textarea"
+                                            placeholder="How can we help you?" rows="4" required></textarea>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit" class="inquiry-form__submit-btn">
+                                    <span class="inquiry-form__btn-text">Submit Inquiry</span>
+                                    <i class="bi bi-send-fill inquiry-form__btn-icon"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+       
+
+       
+        <!-- ========================================================
+             CTA BANNER SECTION
+        ======================================================== -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-section__card">
+                    <!-- Decorative blobs -->
+                    <span class="cta-section__blob cta-section__blob--1" aria-hidden="true"></span>
+                    <span class="cta-section__blob cta-section__blob--2" aria-hidden="true"></span>
+                    <!-- Left: Text -->
+                    <div class="cta-section__text anim-fade-left">
+                        <p class="cta-section__eyebrow">
+                            <i class="bi bi-stars"></i>
+                            Hands-On Demos · Expert Assistance · Easy Finance
+                        </p>
+                        <h2 class="cta-section__heading">
+                            Ready to experience the latest technology?<br>
+                            Connect with us today.
+                        </h2>
+                        <p class="cta-section__sub">
+                            Have questions or want to check product stock? Speak directly to our store representative.
+                        </p>
+                    </div>
+                    <!-- Right: CTA -->
+                    <div class="cta-section__action anim-fade-up">
+                        <a href="../branches/index.html#contact-us"
+                            class="hero-section__btn hero-section__btn--primary cta-section__btn">
+                            <i class="bi bi-telephone-fill hero-section__btn-icon"></i>
+                            <span class="hero-section__btn-wrap">
+                                <span class="hero-section__btn-default">Contact Support</span>
+                                <span class="hero-section__btn-hover">Call Support</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================================
+         FOOTER
+    ======================================================== -->
+    <footer class="site-footer">
+        <div class="container-fluid px-4">
+            <!-- Top: 4 columns -->
+            <div class="row g-5 site-footer__top">
+                <!-- Col 1: Logo + tagline -->
+                <div class="col-lg-3 col-md-6 d-flex justify-content-center">
+                    <a href="../home/index.html" class="site-footer__logo-link">
+                        <img src="../assets/img/ms-logo-s-cbg.png" alt="Murlidhar Store" class="site-footer__logo">
+                    </a>
+                </div>
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h4 class="site-footer__heading">Quick Links</h4>
+                    <ul class="site-footer__links">
+                        <li><a href="../home/index.html" class="site-footer__link"><i
+                                    class="bi bi-chevron-right"></i>Home</a></li>
+                        <li><a href="../about-us/index.html" class="site-footer__link"><i
+                                    class="bi bi-chevron-right"></i>About Us</a></li>
+                        <li><a href="index.html" class="site-footer__link"><i
+                                    class="bi bi-chevron-right"></i>Branches</a></li>
+                        <li><a href="../brands-&-products/index.html" class="site-footer__link"><i
+                                    class="bi bi-chevron-right"></i>Brands
+                                &amp;
+                                Products</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Contact Us -->
+                <div class="col-lg-3 col-md-6 col-6">
+                    <h4 class="site-footer__heading">Contact Us</h4>
+                    <ul class="site-footer__contact">
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:+91 97734 34988" class="site-footer__link">+91 97734 34988</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:info@murlidharstore.com"
+                                class="site-footer__link">info@murlidharstore.com</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-globe"></i>
+                            <a href="#" class="site-footer__link">www.murlidharstore.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Col 4: Social Media -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="site-footer__heading">Follow Us</h4>
+                    <p class="site-footer__social-desc">Stay connected for the latest offers, launches and updates.</p>
+                    <div class="site-footer__socials">
+                        <a href="#" class="top-header__social-link top-header__social-link--instagram"
+                            aria-label="Instagram" target="_blank" rel="noopener">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919773434988?text=Hi%20Murlidhar%20Store" class="top-header__social-link top-header__social-link--whatsapp"
+                            aria-label="WhatsApp" target="_blank" rel="noopener">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="#" class="top-header__social-link top-header__social-link--facebook"
+                            aria-label="Facebook" target="_blank" rel="noopener">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Divider -->
+            <div class="site-footer__divider"></div>
+            <!-- Bottom bar -->
+            <div class="container site-footer__bottom">
+                <p class="site-footer__copy">
+                    &copy; 2026 All Rights Reserved — <strong>Murlidhar Store</strong>
+                </p>
+                <p class="site-footer__credit">
+                    Made with <span class="site-footer__heart">❤️</span> by
+                    <a href="https://www.mvmdigitals.com/" class="site-footer__credit-link" target="_blank"
+                        rel="noopener">MVM Digital Pvt. Ltd.</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../assets/js/main.js"></script>
+
+    <!-- 3D Curved Carousel Logic -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".portfolio-3d-card");
+            const container = document.querySelector(".portfolio-3d-carousel-container");
+            const slider = document.getElementById("angleSlider");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+            if (!cards.length || !container) return;
+
+            let isHovered = false;
+            let isDragging = false;
+            let startX = 0;
+            let currentX = 0;
+            let angle = 0; // Current rotation angle in radians
+            let targetAngle = 0; // Target angle for smooth interpolation
+            const speed = 0.003; // Speed of auto-spin
+
+            document.querySelectorAll(".branches-map__marker").forEach((marker) => {
+                marker.addEventListener("click", () => {
+                    const branchIndex = Number(marker.dataset.branchIndex);
+                    if (!Number.isInteger(branchIndex) || branchIndex < 0 || branchIndex >= cards.length) return;
+
+                    const fullTurn = Math.PI * 2;
+                    const desiredAngle = -branchIndex * fullTurn / cards.length;
+                    const currentAngle = ((angle % fullTurn) + fullTurn) % fullTurn;
+                    const delta = ((desiredAngle - currentAngle + Math.PI) % fullTurn + fullTurn) % fullTurn - Math.PI;
+                    targetAngle = angle + delta;
+                    isHovered = true;
+                    setTimeout(() => { isHovered = false; }, 3000);
+                });
+            });
+
+            // Setup hover listeners
+            container.addEventListener("mouseenter", () => { isHovered = true; });
+            container.addEventListener("mouseleave", () => {
+                if (!isDragging) isHovered = false;
+            });
+
+            // Handle range slider input
+            slider.addEventListener("input", (e) => {
+                isHovered = true;
+                targetAngle = (parseFloat(e.target.value) / 180) * Math.PI;
+                angle = targetAngle; // Instant sync
+            });
+
+            slider.addEventListener("change", () => {
+                isHovered = false;
+            });
+
+            // Prev / Next button actions
+            prevBtn.addEventListener("click", () => {
+                isHovered = true;
+                targetAngle -= (2 * Math.PI / cards.length);
+                setTimeout(() => { isHovered = false; }, 3000);
+            });
+
+            nextBtn.addEventListener("click", () => {
+                isHovered = true;
+                targetAngle += (2 * Math.PI / cards.length);
+                setTimeout(() => { isHovered = false; }, 3000);
+            });
+
+            // Mouse and Touch dragging on container
+            container.addEventListener("mousedown", dragStart);
+            container.addEventListener("touchstart", dragStart, { passive: true });
+
+            window.addEventListener("mousemove", dragMove);
+            window.addEventListener("touchmove", dragMove, { passive: false });
+
+            window.addEventListener("mouseup", dragEnd);
+            window.addEventListener("touchend", dragEnd);
+
+            function dragStart(e) {
+                isDragging = true;
+                isHovered = true;
+                startX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+                currentX = startX;
+            }
+
+            function dragMove(e) {
+                if (!isDragging) return;
+
+                const clientX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+                const deltaX = clientX - currentX;
+                currentX = clientX;
+
+                const sensitivity = 0.006;
+                targetAngle += deltaX * sensitivity;
+                angle = targetAngle; // Direct update
+
+                if (e.cancelable) e.preventDefault();
+            }
+
+            function dragEnd() {
+                if (!isDragging) return;
+                isDragging = false;
+                setTimeout(() => {
+                    isHovered = false;
+                }, 2000);
+            }
+
+            function animate() {
+                // Autoplay when not interacting
+                if (!isHovered && !isDragging) {
+                    targetAngle += speed;
+                }
+
+                // Smooth LERP interpolation
+                angle += (targetAngle - angle) * 0.1;
+
+                // Sync slider value
+                let angleDeg = Math.round((angle * 180 / Math.PI) % 360);
+                if (angleDeg < 0) angleDeg += 360;
+                if (!isDragging && document.activeElement !== slider) {
+                    slider.value = angleDeg;
+                }
+
+                const width = container.offsetWidth;
+                let radius = Math.min(width * 0.38, 480);
+                let depthOffset = -60;
+                let depthAmplitude = 160;
+
+                if (width <= 480) {
+                    radius = Math.min(width * 0.35, 200);
+                    depthOffset = -40;
+                    depthAmplitude = 100;
+                } else if (width <= 768) {
+                    radius = Math.min(width * 0.36, 250);
+                    depthOffset = -50;
+                    depthAmplitude = 120;
+                }
+
+                cards.forEach((card, idx) => {
+                    const cardAngle = angle + (idx * (2 * Math.PI / cards.length));
+
+                    const x = Math.sin(cardAngle) * radius;
+                    const z = Math.cos(cardAngle) * depthAmplitude + depthOffset;
+
+                    const minZ = depthOffset - depthAmplitude;
+                    const maxZ = depthOffset + depthAmplitude;
+                    const zRange = maxZ - minZ;
+
+                    const scale = ((z - minZ) / zRange) * 0.35 + 0.65; // scales between 0.65 (back) and 1.0 (front)
+                    const rotY = -Math.sin(cardAngle) * 45; // rotation Y matches U-curve flow
+                    const y = Math.cos(cardAngle) * 12; // vertical offset adjustment
+
+                    const opacity = ((z - minZ) / zRange) * 0.8 + 0.2; // ranges from 0.2 to 1.0
+
+                    card.style.transform = `translate3d(${x}px, ${y}px, ${z}px) rotateY(${rotY}deg) scale(${scale})`;
+                    card.style.opacity = opacity;
+                    card.style.zIndex = Math.round(z + 500);
+
+                    if (opacity < 0.45) {
+                        card.style.pointerEvents = "none";
+                    } else {
+                        card.style.pointerEvents = "auto";
+                    }
+                });
+
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+
+            // Click to redirect (only if not clicking a button/link itself)
+            cards.forEach(card => {
+                card.addEventListener("click", (e) => {
+                    if (e.target.tagName !== 'A' && !e.target.closest('a')) {
+                        const url = card.getAttribute("data-url");
+                        if (url) window.open(url, "_blank");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

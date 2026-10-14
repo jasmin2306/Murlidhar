@@ -252,36 +252,99 @@ function msThrottle(fn, delay) {
     onScroll();
 }());
 
+// /* ------------------------------------------------------------
+//    4. Mobile Nav Toggle
+//    ------------------------------------------------------------ */
+// (function () {
+//     'use strict';
+
+//     var nav      = document.querySelector('.main-nav');
+//     var toggler  = document.querySelector('.main-nav__toggler');
+//     var collapse = document.querySelector('.main-nav__collapse');
+//     if (!toggler || !collapse || !nav) return;
+
+//     toggler.addEventListener('click', function () {
+//         var isOpen = collapse.classList.contains('show');
+//         if (isOpen) {
+//             collapse.classList.remove('show');
+//             toggler.setAttribute('aria-expanded', 'false');
+//         } else {
+//             collapse.classList.add('show');
+//             toggler.setAttribute('aria-expanded', 'true');
+//         }
+//     });
+
+//     // Close on outside click
+//     document.addEventListener('click', function (e) {
+//         if (!nav.contains(e.target)) {
+//             collapse.classList.remove('show');
+//             toggler.setAttribute('aria-expanded', 'false');
+//         }
+//     });
+// }());
+
+
+
+
+
+
+
+
 /* ------------------------------------------------------------
-   4. Mobile Nav Toggle
+   4. Smooth Mobile Nav Toggle
    ------------------------------------------------------------ */
 (function () {
     'use strict';
 
-    var nav      = document.querySelector('.main-nav');
-    var toggler  = document.querySelector('.main-nav__toggler');
-    var collapse = document.querySelector('.main-nav__collapse');
-    if (!toggler || !collapse || !nav) return;
+    const nav = document.querySelector('.main-nav');
+    const toggler = document.querySelector('.main-nav__toggler');
+    const collapse = document.querySelector('.main-nav__collapse');
+
+    if (!nav || !toggler || !collapse) return;
+
+    function setMenu(open) {
+        collapse.classList.toggle('show', open);
+        toggler.classList.toggle('is-active', open);
+        toggler.setAttribute('aria-expanded', String(open));
+        collapse.setAttribute('aria-hidden', String(!open));
+    }
+
+    setMenu(false);
 
     toggler.addEventListener('click', function () {
-        var isOpen = collapse.classList.contains('show');
-        if (isOpen) {
-            collapse.classList.remove('show');
-            toggler.setAttribute('aria-expanded', 'false');
-        } else {
-            collapse.classList.add('show');
-            toggler.setAttribute('aria-expanded', 'true');
+        const isOpen = collapse.classList.contains('show');
+        setMenu(!isOpen);
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!nav.contains(e.target)) {
+            setMenu(false);
         }
     });
 
-    // Close on outside click
-    document.addEventListener('click', function (e) {
-        if (!nav.contains(e.target)) {
-            collapse.classList.remove('show');
-            toggler.setAttribute('aria-expanded', 'false');
+    // Close when a navigation link is clicked
+    collapse.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            setMenu(false);
+        });
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            setMenu(false);
+        }
+    });
+
+    // Reset menu on desktop
+    window.addEventListener('resize', function () {
+        if (window.innerWidth > 991) {
+            setMenu(false);
         }
     });
 }());
+
 
 /* ------------------------------------------------------------
    5. Universal Scroll Animations (IntersectionObserver)
@@ -1498,3 +1561,131 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+
+
+
+/* ==========================================
+   MURLIDHAR — AUTO OFFER SLIDER
+========================================== */
+
+(function () {
+  "use strict";
+
+  function initOfferSlider() {
+    const slider = document.getElementById("msOfferSlider");
+    if (!slider || slider.dataset.initialized === "true") return;
+
+    const track = slider.querySelector(".ms-offer-track");
+    const slides = [...slider.querySelectorAll(".ms-offer-slide")];
+    const dots = [...slider.querySelectorAll(".ms-offer-dot")];
+    const prev = slider.querySelector(".ms-offer-arrow--prev");
+    const next = slider.querySelector(".ms-offer-arrow--next");
+
+    if (!track || slides.length < 2) return;
+
+    slider.dataset.initialized = "true";
+
+    let index = 0;
+    let timer = null;
+    let startX = 0;
+    let startY = 0;
+
+    const delay = 3500;
+
+    function showSlide(newIndex) {
+      index = (newIndex + slides.length) % slides.length;
+
+      track.style.transform =
+        `translate3d(-${index * 100}%, 0, 0)`;
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("is-active", i === index);
+        if (i === index) {
+          dot.setAttribute("aria-current", "true");
+        } else {
+          dot.removeAttribute("aria-current");
+        }
+      });
+    }
+
+    function stopAuto() {
+      if (timer !== null) {
+        clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    function startAuto() {
+      stopAuto();
+
+      if (document.hidden) return;
+
+      timer = setInterval(() => {
+        showSlide(index + 1);
+      }, delay);
+    }
+
+    function navigate(newIndex) {
+      showSlide(newIndex);
+      startAuto();
+    }
+
+    prev?.addEventListener("click", () => {
+      navigate(index - 1);
+    });
+
+    next?.addEventListener("click", () => {
+      navigate(index + 1);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        navigate(i);
+      });
+    });
+
+    // Pause on hover
+    slider.addEventListener("mouseenter", stopAuto);
+    slider.addEventListener("mouseleave", startAuto);
+
+    // Swipe on mobile
+    slider.addEventListener(
+      "touchstart",
+      (e) => {
+        startX = e.changedTouches[0].clientX;
+        startY = e.changedTouches[0].clientY;
+      },
+      { passive: true }
+    );
+
+    slider.addEventListener(
+      "touchend",
+      (e) => {
+        const dx = e.changedTouches[0].clientX - startX;
+        const dy = e.changedTouches[0].clientY - startY;
+
+        if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy)) {
+          navigate(index + (dx < 0 ? 1 : -1));
+        }
+      },
+      { passive: true }
+    );
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stopAuto();
+      else startAuto();
+    });
+
+    showSlide(0);
+    startAuto();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initOfferSlider);
+  } else {
+    initOfferSlider();
+  }
+})();
